@@ -9,10 +9,10 @@
 
             foreach($guess_array as $guess) {
                 $anagram_words = str_split($guess);
-                $sorted_words = sort($anagram_words);
+                //$sorted_words = sort($input_word);
                 $output_words =  array();
 
-                foreach($sorted_words as $word) {
+                foreach($anagram_words as $word) {
                     //$words_in_plode = implode($word);
                     array_push($output_words, $word);
                 }
