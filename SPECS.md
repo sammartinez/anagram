@@ -1,3 +1,6 @@
+    ------------Zero Case---------------
+    Case 0 : Word is Word.
+
     ------------First Case---------------
     Case 1 : Word is in array of list of words.
 
