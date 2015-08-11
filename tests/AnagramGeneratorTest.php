@@ -4,31 +4,20 @@
 
     class AnagramGeneratorTest extends PHPUnit_Framework_TestCase
     {
-            function test_makeAnagramTest_word()
-            {
-                //Arrange
-                $test_AnagramGenerator = new AnagramGenerator;
-                $input = "eat";
+             function test_makeAnagramTest_letter()
+             {
+                 //Arrange
+                 $test_AnagramGenerator = new AnagramGenerator;
+                 $input_word = "a";
+                 $guess_array = ["a"];
 
-                //Act
-                $result = $test_AnagramGenerator->makeAnagramCase($input);
+                 //Act
+                $result = $test_AnagramGenerator->makeAnagramCase($input_word, $guess_array);
 
-                //Assert
-                $this->assertEquals("eat", $result);
-            }
+                 //Assert
+                 $this->assertEquals(["a"], $result);
+             }
 
-            function test_makeAnagramTest_listOfWords()
-            {
-                //Arrange
-                $test_AnagramGenerator = new AnagramGenerator;
-                $input = "eat";
-
-                //Act
-                $result = $test_AnagramGenerator->makeAnagramCase($input);
-
-                //Assert
-                $this->assertEquals("eat", $result);
-            }
 
     }
 
